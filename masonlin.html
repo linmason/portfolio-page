@@ -4,28 +4,79 @@
 		<title>Mason Lin</title>
         <link rel="stylesheet" href="masonlin.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/6ee58b9b39.js" crossorigin="anonymous"></script>
+        <style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
+		</style>
 	</head>
 
 	<body>
-		<aside id="sidebar">
-			<h1>Experience</h1>
-			<h1>Projects</h1>
-			<h1>Photography</h1>
-		</aside>
-		<main id="main">
-			<div id="intro">
-				<img src="profilepic.jpeg" style="width:200px; height:auto; border-radius: 50%" >
-				<h1>Mason Lin</h1>
-				<a href="https://github.com/linmason" target="_blank"><img src="github_logo.png" style="width:50px;height:50px;"></a>
-				<p>Second year Computer Science student at Northwestern</p>
-			</div>
-			<div id="experience">
-				<h1>Experience</h1>
-					<div>
-						<h2>.Dev Developers Club</h2>
-						<h3>Full Stack Development Team Lead</h3>
-						<p>Led a team to develop an image processing app using Python that improves photo composition and color. Conceptualized the project focus with user and market research. Integrated an automated cropping algorithm to optimize photo composition.Utilized the OpenCV library to manipulate image properties.</p>
+		<div class="navbar">
+			<nav class="navcontent-container">
+				<div class="logo-container">
+					<a>
+						<img src="profilepic.jpeg" alt="personal logo" style="width:40px; height:auto; border-radius: 50%">
+					</a>
+				</div>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li>
+							<a>My Work</a>
+							<rect class="tab-rect-active"></rect>
+						</li>
+						<li>
+							<a>Me</a>
+							<rect class="tab-rect-inactive"></rect>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<main class="main">
+			<div class="main-content">
+				<div class="welcome">
+					<h2 id="welcome-word">Welcome</h2>
+					<img src="welcome_logo.png" alt="welcome logo" style="width:350px; height: auto;">
+				</div>
+
+				<rect id="first-rect" class="transition-rectangle"></rect>
+
+				<div class="intro">
+					<p>My name is Mason Lin. I am a Junior Computer Science student at Northwestern.
+					I love exploring immersive digital cultural, social, and novel experiences.</p>
+				</div>
+
+				<rect id="second-rect"></rect>
+
+				<div class="experience">
+					<h1>Experience</h1>
+					<div class="experience-card">
+						<i class="experience-card-image fas fa-plane-departure fa-9x"></i>
+						<div class="experience-card-content">
+							<h2>.Dev Developers Club</h2>
+							<h3>Full Stack Development Team Lead</h3>
+							<p>Led a team to develop an image processing app using Python that improves photo composition and color. Conceptualized the project focus with user and market research. Integrated an automated cropping algorithm to optimize photo composition.Utilized the OpenCV library to manipulate image properties.</p>
+						</div>
 					</div>
+					<div class="experience-card">
+						<i class="experience-card-image fas fa-plane-departure fa-9x"></i>
+						<div class="experience-card-content">
+							<h2>.Dev Developers Club</h2>
+							<h3>Full Stack Development Team Lead</h3>
+							<p>Led a team to develop an image processing app using Python that improves photo composition and color. Conceptualized the project focus with user and market research. Integrated an automated cropping algorithm to optimize photo composition.Utilized the OpenCV library to manipulate image properties.</p>
+						</div>
+					</div>
+					<div class="experience-card">
+						<i class="experience-card-image fas fa-plane-departure fa-9x"></i>
+						<div class="experience-card-content">
+							<h2>.Dev Developers Club</h2>
+							<h3>Full Stack Development Team Lead</h3>
+							<p>Led a team to develop an image processing app using Python that improves photo composition and color. Conceptualized the project focus with user and market research. Integrated an automated cropping algorithm to optimize photo composition.Utilized the OpenCV library to manipulate image properties.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 	</body>
