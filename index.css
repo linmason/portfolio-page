@@ -26,7 +26,7 @@
 	height: 100px;
 	background-color: #172844;
 	animation-name: transition-rectangle;
-	animation-duration: 5s;
+	animation-duration: 4s;
 	/*animation-delay: 3s;*/
 }
 
@@ -89,18 +89,38 @@ body {
 }
 
 .nav-links li a {
-	font-family: 'Raleway', sans-serif;
-	font-size: 26px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
-.tab-rect-active {
+.nav-links li:hover a h3 {
+	color: #007C88;
+}
+
+.nav-links li:hover a rect {
+	background-color: #007C88;
+}
+
+.nav-links li a h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: black;
+}
+
+.nav-link-active a rect {
 	margin-top: 2px;
 	width: 100px;
 	height: 4px;
 	background-color: #007C88;
 }
 
-.tab-rect-inactive {
+.nav-link-inactive a rect {
 	margin-top: 2px;
 	width: 100px;
 	height: 4px;
@@ -114,6 +134,14 @@ body {
 	flex-direction: column;
 	overflow-y: auto;
 	background-color: #FFF3E4;
+}
+
+.main-me {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	background-color: #F66A54;
 }
 
 .main-content {
@@ -208,3 +236,28 @@ body {
 	align-items: flex-start;
 	color: white;
 }
+
+.profile-header {
+	display: flex;
+	flex-drection: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+#about-me {
+	position: absolute;
+	margin-top: 10vh;
+	top: 0px;
+	left: 25vw;
+
+	font-family:'Philosopher', san-serif;
+	font-size: 80px;
+	color: #007C88;
+}
+
+#profile-pic {
+	margin-top: 10vh;
+}
+
+
