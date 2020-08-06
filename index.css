@@ -1,0 +1,263 @@
+@keyframes transition-rectangle {
+	0% {height: 0px;}
+	50% {height: 0px;}
+	100% {height: 100px;}
+}
+
+@keyframes transition-rectangle-appear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes welcome-img {
+	from {width: 200px;}
+	to {width: 350px;}
+}
+
+@keyframes welcome-word {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.transition-rectangle {
+	position: absolute;
+	width: 5px;
+	height: 100px;
+	background-color: #172844;
+	animation-name: transition-rectangle;
+	animation-duration: 4s;
+	/*animation-delay: 3s;*/
+}
+
+body {
+	grid-template-rows: 10vh 90vh;
+	grid-template-areas: 
+		'nav'
+		'main';
+	display: grid;
+	width: 100vw;
+	overflow: hidden;
+	margin: 0px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+	grid-area: nav;
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.navcontent-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding-top: 1%;/*
+	padding-bottom: 2%;*/
+}
+
+.logo-container {
+	width: 50%;
+	height: 100%;
+	padding-left: 5%;
+}
+
+.nav-links-container {
+	padding-right: 12%;
+	width: 50%;
+	height: 100%;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-links li {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-links li a {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.nav-links li:hover a h3 {
+	color: #007C88;
+}
+
+.nav-links li:hover a rect {
+	background-color: #007C88;
+}
+
+.nav-links li a h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: black;
+}
+
+.nav-link-active a rect {
+	margin-top: 2px;
+	width: 100px;
+	height: 4px;
+	background-color: #007C88;
+}
+
+.nav-link-inactive a rect {
+	margin-top: 2px;
+	width: 100px;
+	height: 4px;
+	background-color: #8C8172;
+}
+
+/* Main Section Styling */
+.main {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	background-color: #FFF3E4;
+}
+
+.main-me {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	background-color: #F66A54;
+}
+
+.main-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.welcome {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#welcome-word {
+	position: absolute;
+	/*top: 30vh;*/
+	margin-top: 1.5vh;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+	font-family:'Philosopher', san-serif;
+	font-size:90px;
+	animation-name: welcome-word;
+	animation-duration: 3s;
+	color: #007C88;
+}
+
+.welcome img {
+	animation-name: welcome-img;
+	animation-duration: 2s;
+}
+
+#first-rect {
+	top: 70vh;
+}
+
+#second-rect {
+	width: 5px;
+	height: 100px;
+	background-color: #0D1F2D;
+}
+
+.intro {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.experience {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.experience-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #8C8172;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 25px;
+	border-radius: 8px;
+}
+
+.experience-card-image {
+	margin-right: 30px;
+}
+
+.experience-card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: white;
+}
+
+.profile-header {
+	display: flex;
+	flex-drection: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+#about-me {
+	position: absolute;
+	margin-top: 10vh;
+	top: 0px;
+	left: 25vw;
+
+	font-family:'Philosopher', san-serif;
+	font-size: 80px;
+	color: #007C88;
+}
+
+#profile-pic {
+	margin-top: 10vh;
+}
+
+
