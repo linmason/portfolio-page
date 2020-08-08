@@ -141,7 +141,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow-y: auto;
-	background-color: #F66A54;
+	background-color: #FF7E64;
 }
 
 .main-content {
@@ -201,6 +201,8 @@ body {
 	align-items: center;
 	font-size: 36px;
 	margin-bottom: 50px;
+
+	font-family: 'Noto Serif JP', serif;
 }
 
 .experience {
@@ -213,12 +215,18 @@ body {
 	margin-bottom: 50px;
 }
 
+#experience-title {
+	font-family:'Philosopher', san-serif;
+	font-size: 50px;
+	color: #007C88;
+}
+
 .experience-card {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background-color: #8C8172;
+	background-color: #C5BBAE;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 25px;
@@ -234,7 +242,23 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	color: white;
+	color: black;
+	font-family: 'Noto Serif JP', serif;
+}
+
+.experience-card-content h2 {
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+.experience-card-content h3 {
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+.experience-card-content p {
+	font-size: 16px;
 }
 
 .profile-header {
@@ -242,7 +266,8 @@ body {
 	flex-drection: column;
 	justify-content: center;
 	align-items: center;
-	height: 70vh;
+	height: 500px;
+	margin-bottom: 20px;
 }
 
 #about-me {
@@ -260,4 +285,42 @@ body {
 	margin-top: 10vh;
 }
 
+.bio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+	height: 350px;
+	font-family: 'Noto Serif JP', serif;
+}
 
+.links-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	width: 70%;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+#links-title {
+	font-family:'Philosopher', san-serif;
+	font-size: 40px;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.link {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+}
