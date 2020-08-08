@@ -1,18 +1,3 @@
-
-const RenderExperiences = (experiences) => {
-	console.log("hello")
-	var exp_elem = document.getElementsByClassName("experience")[0];
-	console.log(exp_elem)
-	for (experience of experiences) {
-		const template = `
-			<h2>${experience.company}</h2>
-			<h3>${experience.role}</h3>
-			<p>${experience.description}</p>
-			`;
-		exp_elem.children.append(template);
-	}
-}
-
 const experience_1 = {
 	company:"Boeing",
 	role:"Software Engineering Intern",
@@ -27,5 +12,17 @@ const experience_2 = {
 
 const experiences = [experience_1, experience_2];
 
-console.log("hello!");
+const RenderExperiences = (experiences) => {
+	var exp_elem = document.getElementsByClassName("experience");
+
+	for (experience of experiences) {
+		const template = `
+			<h2>${experience.company}</h2>
+			<h3>${experience.role}</h3>
+			<p>${experience.description}</p>
+			`;
+		exp_elem.innerHTML += template;
+	}
+}
+
 RenderExperiences(experiences);
