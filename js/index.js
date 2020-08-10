@@ -1,10 +1,32 @@
+
+const RenderExperiences = (experiences) => {
+	console.log("hello");
+	var exp_elem = document.getElementsByClassName("experience")[0];
+	console.log(exp_elem);
+	for (experience of experiences) {
+		const template = `
+			<div class="experience-card">
+				<i src="${experience.image}" class="experience-card-image"></i>
+				<div class="experience-card-contnet">
+					<h2>${experience.company}</h2>
+					<h3>${experience.role}</h3>
+					<p>${experience.description}</p>
+				</div>
+			</div>
+			`;
+		exp_elem.innerHTML += (template);
+	}
+}
+
 const experience_1 = {
+	image:"assets/plane.svg",
 	company:"Boeing",
 	role:"Software Engineering Intern",
 	description:"Developed decryption tools for on-flight telemetry data"
 }
 
 const experience_2 = {
+	image:"assets/plane.svg",
 	company:"Evanston Development Coorporative",
 	role:"Full Stack Developer",
 	description:"Developed interactive graphical visualization of accessable homes. Followed through with development from user interview to paper prototyping to deployed solution."
@@ -12,17 +34,5 @@ const experience_2 = {
 
 const experiences = [experience_1, experience_2];
 
-const RenderExperiences = (experiences) => {
-	var exp_elem = document.getElementsByClassName("experience");
-
-	for (experience of experiences) {
-		const template = `
-			<h2>${experience.company}</h2>
-			<h3>${experience.role}</h3>
-			<p>${experience.description}</p>
-			`;
-		exp_elem.innerHTML += template;
-	}
-}
-
+console.log("hello!");
 RenderExperiences(experiences);
