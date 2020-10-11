@@ -154,6 +154,7 @@ body {
 }
 
 .welcome {
+	position: relative;
 	height: 90vh;
 	display: flex;
 	flex-direction: column;
@@ -164,7 +165,7 @@ body {
 #welcome-word {
 	position: absolute;
 	/*top: 30vh;*/
-	margin-top: 1.5vh;
+	margin-top: 10vh;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -236,6 +237,8 @@ body {
 }
 
 .experience-card-image {
+	height: 120px;
+	width: auto;
 	margin-right: 30px;
 }
 

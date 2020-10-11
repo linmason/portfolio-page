@@ -6,8 +6,8 @@ const RenderExperiences = (experiences) => {
 	for (experience of experiences) {
 		const template = `
 			<div class="experience-card">
-				<i src="${experience.image}" class="experience-card-image"></i>
-				<div class="experience-card-contnet">
+				<img src="${experience.image}" class="experience-card-image"></img>
+				<div class="experience-card-content">
 					<h2>${experience.company}</h2>
 					<h3>${experience.role}</h3>
 					<p>${experience.description}</p>
@@ -26,7 +26,7 @@ const experience_1 = {
 }
 
 const experience_2 = {
-	image:"assets/plane.svg",
+	image:"assets/edc_logo.png",
 	company:"Evanston Development Coorporative",
 	role:"Full Stack Developer",
 	description:"Developed interactive graphical visualization of accessable homes. Followed through with development from user interview to paper prototyping to deployed solution."
