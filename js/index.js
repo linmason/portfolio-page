@@ -26,7 +26,7 @@ const RenderProjects = (projects) => {
 	for (project of projects) {
 		const template = `
 			<a href=${project.href} class="project-card">
-				<img src=${project.image} class="project-card-image" style="width: 100%; height: 40vw; object-fit: cover; border-radius: 8px"></img>
+				<img src=${project.image} class="project-card-image" style="width: 100%; height: 30vw; object-fit: cover; border-radius: 8px"></img>
 				<div class="project-card-overlay">
 					<div class="project-card-content">
 						<h2>${project.title}</h2>
@@ -62,14 +62,21 @@ const experience_3 = {
 }
 
 const project_1 = {
-	href:"me.html",
-	image:"assets/delta.png",
-	title:"Graphics",
-	description:"Developed 3D navigatable shaded world using WebGL"
+	href:"http://dtr.northwestern.edu/projects/oces_for_relationship_development_",
+	image:"assets/cerebro-screenshot.png",
+	title:"OCEs For Relationship Development",
+	description:"Researched, designed, and tested social interactions application that connects busy students looking to connect outside their social circle. The app pairs users sharing the same environment and promotes self-disclosure between them to help develop their relationship."
+}
+
+const project_2 = {
+	href:"https://drive.google.com/file/d/1yxxeqqy_vLUs4e5v_tFvqPk95hFeYihm/view?usp=sharing",
+	image:"assets/cv-final.png",
+	title:"Finger Cursor",
+	description:"Developed Python program that recognize finger gestures to draw on video. I used Skin color segmentation, contour extraction, and template based contour matching."
 }
 
 const experiences = [experience_1, experience_3, experience_2];
-const projects = [project_1, project_1];
+const projects = [project_1, project_2];
 
 RenderExperiences(experiences);
 RenderProjects(projects)

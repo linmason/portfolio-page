@@ -290,12 +290,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	height: 40vw;
+	height: 30vw;
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	overflow: hidden;
 	border-radius: 8px;
+	/*border-width: 0px;
+	cursor: pointer;*/
 }
 
 .project-card-image {
