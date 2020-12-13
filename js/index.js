@@ -75,8 +75,15 @@ const project_2 = {
 	description:"Developed Python program that recognize finger gestures to draw on video. I used Skin color segmentation, contour extraction, and template based contour matching."
 }
 
+const project_3 = {
+	href:"https://linmason.github.io/graphics-project-c/",
+	image:"assets/graphics.png",
+	title:"Computer Graphics Project",
+	description:"Developed Webgl program that demonstrates different shading and lighting techniques with navigatable camera, customizable light, and materials."
+}
+
 const experiences = [experience_1, experience_3, experience_2];
-const projects = [project_1, project_2];
+const projects = [project_1, project_3, project_2];
 
 RenderExperiences(experiences);
 RenderProjects(projects)
