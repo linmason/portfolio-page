@@ -78,12 +78,19 @@ const project_2 = {
 const project_3 = {
 	href:"https://linmason.github.io/graphics-project-c/",
 	image:"assets/graphics.png",
-	title:"Computer Graphics Project",
-	description:"Developed Webgl program that demonstrates different shading and lighting techniques with navigatable camera, customizable light, and materials."
+	title:"Computer Graphics Lighting Project",
+	description:"Developed 3D Webgl program that demonstrates different shading and lighting techniques with navigatable camera, customizable light, and materials."
+}
+
+const project_4 = {
+	href:"https://linmason.github.io/graphics-project-particles/",
+	image:"assets/graphics-particles.png",
+	title:"Computer Graphics Particle System Project",
+	description:"Developed 3D Webgl program that demonstrates particle systems simulating various complex particle forces and behaviors with different solvers."
 }
 
 const experiences = [experience_1, experience_3, experience_2];
-const projects = [project_1, project_3, project_2];
+const projects = [project_1, project_3, project_4, project_2];
 
 RenderExperiences(experiences);
 RenderProjects(projects)
