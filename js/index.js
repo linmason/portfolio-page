@@ -44,7 +44,7 @@ const experience_1 = {
 	image:"assets/boeing.png",
 	company:"Boeing",
 	role:"Software Engineering Intern",
-	description:"Developed, tested, and deployed Python mission control software for Direct Attacks missiles. Identified, solved, and tested ADA in-flight software customer problem reports. Contributed to sprint planning, standups, code review as part of an Agile Scrum team."
+	description:"Developed, tested, and deployed Python Telemetry deserialization software for Direct Attacks missiles. Identified, solved, and tested ADA in-flight software customer problem reports. Contributed to sprint planning, standups, code review as part of an Agile Scrum team."
 }
 
 const experience_2 = {
@@ -59,6 +59,13 @@ const experience_3 = {
 	company:"Design Technology and Research, Delta Lab",
 	role:"Undergraduate Researcher",
 	description:"Conducted Human-Computer Interaction research on novel digital social interactions to easily progress friendships at distance. Developing meteor.js mobile app in order to deploy and test research-based social experiences. Propelled research forward with HCI research methodologies as part of an Agile-based team."
+}
+
+const experience_4 = {
+	image:"assets/microsoft.jpeg",
+	company:"Microsoft",
+	role:"Software Engineer Intern",
+	description:"Designed, developed, E2E tested, and deployed production API for Microsoft Commerce Accounts using .Net Core and Cosmos DB to enable additional business contact responsibilities and descriptions. \n Developed and deployed secure production endpoint calling portal for Commerce Account Sign-up APIs with associated certificate secrets and tokens for secure access. Contributed to and iterated on code reviews to enable scalable, readable, and compliant code."
 }
 
 const project_1 = {
@@ -89,7 +96,7 @@ const project_4 = {
 	description:"Developed 3D Webgl program that demonstrates particle systems simulating various complex particle forces and behaviors with different solvers."
 }
 
-const experiences = [experience_1, experience_3, experience_2];
+const experiences = [experience_4, experience_1, experience_3, experience_2];
 const projects = [project_1, project_3, project_4, project_2];
 
 RenderExperiences(experiences);
